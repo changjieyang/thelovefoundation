@@ -219,7 +219,7 @@ public class QuotesFragment extends Fragment implements LoaderManager.LoaderCall
         InputStream inputStream = resources.openRawResource(R.raw.quotes);
         BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
         int count = 0;
-        final int size = 880;
+        final int size = 1001;
         ContentValues[] contentValues = new ContentValues[size];
 
         try {
