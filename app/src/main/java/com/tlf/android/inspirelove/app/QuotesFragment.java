@@ -55,7 +55,6 @@ public class QuotesFragment extends Fragment implements LoaderManager.LoaderCall
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
         mQuoteText = (TextView) root.findViewById(R.id.quote);
-
         mQuoteText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -219,7 +218,7 @@ public class QuotesFragment extends Fragment implements LoaderManager.LoaderCall
         InputStream inputStream = resources.openRawResource(R.raw.quotes);
         BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
         int count = 0;
-        final int size = 880;
+        final int size = 1001;
         ContentValues[] contentValues = new ContentValues[size];
 
         try {
